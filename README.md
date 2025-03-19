@@ -1,0 +1,1 @@
+# jurmala-aparts-koda-lasisana
