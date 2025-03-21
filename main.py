@@ -17,7 +17,7 @@ while True:
     print("3. Dargākie par 100k dzīvokļi (filtrēšana)")
     print("4. Top 10 letākie dzīvokļi (kārtošana)")
     print("5. Top 10 dargākie dzīvokļi (kārtošana)")
-    
+
     choice = input("Ievadi komandu: ")
 
     print("==========================")
@@ -38,7 +38,7 @@ while True:
 
         for apartment in pirmie_10_apartamenti:
             kvadrata_cena = int(apartment[8]) / int(apartment[5])
-            
+
             print("Tips:", apartment[7])
             print("Adrese:", apartment[3])
             print("Istabas:", apartment[4])
@@ -65,7 +65,7 @@ while True:
             print("Cena:", apartment[8])
             print("Links:", apartment[0])
             print("--------------------------")
-    
+
     # Top 10 letākie dzīvokļi (kārtošana)
     elif choice == '4':
         apartamenti.sort(key=lambda apartaments: int(apartaments[8]))
@@ -80,7 +80,7 @@ while True:
             print("Cena:", apartment[8])
             print("Links:", apartment[0])
             print("--------------------------")
-            
+
     # Top 10 dargākie dzīvokļi (kārtošana)
     elif choice == '5':
         apartamenti.sort(key=lambda apartaments: int(apartaments[8]), reverse=True)
